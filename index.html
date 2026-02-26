@@ -3,13 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="Author" content="Noah">
-    <meta name="Keywords" content="地址发布页,最新网址,备用入口,备用网址,发布页导航,收藏夹入口">
-    <meta name="Description" content="最新地址发布页，提供备用网址与备用入口汇总，建议收藏以防丢失。">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="favicon" href="favicon.ico">
-    <title>地址发布页 - 最新入口与备用网址</title>
-    <meta name="keywords" content="地址发布页,最新网址,备用网址,备用入口,发布页导航,入口汇总,收藏地址">
-    <meta name="description" content="最新地址发布页，提供备用网址与备用入口汇总，建议收藏本页以防丢失。">
+    <title>91 吃瓜福利导航-收录成人视频网站的老司机福利导航</title>
+    <meta name="keywords" content="福利导航,成人网站导航,成人网址导航,福利网址大全,成人色情网站导航,老司机网址导航,中文色情导航,色情网址导航,色情导航,色界吧,91,91吃瓜,91吃瓜福利导航">
+    <meta name="description" content="91 吃瓜福利导航专属于宅男的网址导航，收录最新的影视、ACG卡通动漫、福利论坛、约炮交友、美图写真、成人游戏app、黄色小说、女优番号、人妖同性等内容的成人色情导航网站">
     <style>
       * {
         box-sizing: border-box;
@@ -60,6 +58,72 @@
         font-size: 14px;
       }
 
+      .brand-note {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 10px;
+        align-items: center;
+        font-size: 14px;
+        color: #374151;
+      }
+
+      .brand-note-title {
+        font-weight: 600;
+        color: #111827;
+      }
+
+      .brand-note-domains {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .brand-note-main {
+        font-weight: 700;
+        color: #111827;
+        font-size: 18px;
+        background: #fff1f2;
+        border: 1px solid #fecdd3;
+        padding: 2px 8px;
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+
+      .brand-note-meta {
+        color: #6b7280;
+      }
+
+      .brand-note-email-value {
+        color: #111827;
+        font-weight: 600;
+      }
+
+      .brand-note-email-pill {
+        color: #111827;
+        font-weight: 600;
+        background: #f3f4f6;
+        border: 1px solid #e5e7eb;
+        padding: 2px 8px;
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+
+      .brand-note-alt {
+        color: #111827;
+        font-weight: 600;
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+        padding: 2px 8px;
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+
+      .brand-note a {
+        color: #2563eb;
+        font-weight: 600;
+      }
+
       .actions {
         display: flex;
         gap: 12px;
@@ -91,7 +155,7 @@
         border-radius: 16px;
         box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
         padding: 24px;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
       }
 
       .card h2 {
@@ -104,44 +168,94 @@
         font-size: 14px;
       }
 
+      .nav-groups {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .nav-section {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .nav-section-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #1f2937;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .nav-section-title::before {
+        content: "";
+        width: 6px;
+        height: 16px;
+        border-radius: 999px;
+        background: #2563eb;
+      }
+
       .nav-grid {
-        margin-top: 18px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 6px;
       }
 
       .nav-item {
         border: 1px solid #e5e7eb;
-        border-radius: 12px;
-        padding: 14px 16px;
+        border-radius: 10px;
+        padding: 8px 10px;
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: 2px;
         transition: all 0.2s ease;
-        background: #f9fafb;
+        background: #ffffff;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
       }
 
       .nav-item:hover {
-        border-color: #cbd5f5;
-        background: #f3f6ff;
+        border-color: #bfdbfe;
+        background: #f8fbff;
         transform: translateY(-2px);
       }
 
       .nav-item .label {
-        font-weight: 600;
-        font-size: 14px;
+        font-weight: 700;
+        font-size: 15px;
+        color: #0f172a;
       }
 
       .nav-item .link {
         color: #2563eb;
-        font-size: 14px;
+        font-size: 13px;
         word-break: break-all;
       }
 
       .nav-item .hint {
         font-size: 12px;
         color: #6b7280;
+      }
+
+      @media (min-width: 721px) {
+        .brand-note {
+          font-size: 15px;
+        }
+
+        .brand-note-main {
+          font-size: 22px;
+        }
+
+        .nav-item .label {
+          font-size: 16px;
+        }
+
+        .nav-item .link,
+        .nav-item .hint {
+          font-size: 14px;
+        }
       }
 
       .tips {
@@ -178,9 +292,83 @@
       }
 
       @media (max-width: 720px) {
+        .wrapper {
+          padding: 20px 12px 28px;
+        }
+
+        .card {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
         .topbar {
           flex-direction: column;
           align-items: flex-start;
+        }
+
+        .brand {
+          width: 100%;
+          gap: 8px;
+        }
+
+        .brand-note {
+          width: 100%;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 6px;
+          font-size: 13px;
+        }
+
+        .brand-note-title {
+          font-size: 13px;
+          flex-basis: 100%;
+        }
+
+        .brand-note-main,
+        .brand-note-alt {
+          font-size: 16px;
+          padding: 4px 10px;
+        }
+
+        .brand-note-domains {
+          gap: 6px;
+        }
+
+        .brand-note-meta {
+          font-size: 13px;
+          flex-basis: 100%;
+        }
+
+        .brand-note-email-pill {
+          font-size: 13px;
+          padding: 4px 10px;
+        }
+
+
+        .actions {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px;
+        }
+
+        .actions .btn {
+          width: 100%;
+          text-align: center;
+        }
+
+        .nav-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .nav-item .label {
+          font-size: 16px;
+        }
+
+        .nav-item .link,
+        .nav-item .hint {
+          font-size: 14px;
         }
       }
     </style>
@@ -189,12 +377,24 @@
     <div class="wrapper">
       <header class="topbar">
         <div class="brand">
-          <h1>永久地址发布页</h1>
+          <h1>91 吃瓜福利导航</h1>
           <span>备用网址与入口汇总</span>
-          <strong>牢记永久域名 91chigua.top，永久邮箱mfeiziyuan@outlook.com</strong>
+          <div class="brand-note">
+            <span class="brand-note-title">永久域名</span>
+            <span class="brand-note-domains">
+              <span class="brand-note-main">91cggg.com</span>
+            </span>
+            <span class="brand-note-meta">备用域名</span>
+            <span class="brand-note-domains">
+              <span class="brand-note-alt">91cg1.cyou</span>
+              <span class="brand-note-alt">91cg2.cyou</span>
+            </span>
+            <span class="brand-note-meta">永久邮箱</span>
+            <span class="brand-note-email-pill">mfeiziyuan@outlook.com</span>
+          </div>
         </div>
         <div class="actions">
-          <a class="btn ghost" href="https://91chigua.top" target="_blank">访问主站</a>
+          <a class="btn ghost" href="https://91cggg.com" target="_blank">访问主站</a>
           <a class="btn" href="mailto:mfeiziyuan@outlook.com">邮箱订阅</a>
         </div>
       </header>
@@ -207,8 +407,7 @@
 
         <section class="card">
           <h2 id="content-title">请 Ctrl + D 收藏本页到浏览器收藏夹</h2>
-          <p class="desc">以下链接根据 JSON 数据自动生成。</p>
-          <div id="content-info" class="nav-grid"></div>
+          <div id="content-info" class="nav-groups"></div>
         </section>
 
         <section class="card tips">
@@ -220,7 +419,7 @@
 
       <footer class="footer">
         <p>本站只为海外华人提供服务，非法律允许地区以及18岁以下用户禁止访问！</p>
-        <p>© 2025 91吃瓜网 <a href="https://91chigua.top">https://91chigua.top</a> Inc. All Rights Reserved</p>
+        <p>© 2025 91吃瓜网 <a href="https://91cggg.com">https://91cggg.com</a> Inc. All Rights Reserved</p>
       </footer>
     </div>
 
@@ -248,16 +447,49 @@
           .filter((item) => item.active === "on")
           .sort((a, b) => Number(a.order) - Number(b.order));
 
-        container.innerHTML = items
-          .map((item) => {
-            const safeUrl = item.url.replace(/\\\//g, "/");
-            const note = item.note ? item.note : "备用链接";
+        const areaLabels = {
+          link1: "推荐入口",
+          link_yqlj2: "热门入口"
+        };
+
+        const grouped = items.reduce((acc, item) => {
+          const area = item.area || "default";
+          if (!acc[area]) {
+            acc[area] = [];
+          }
+          acc[area].push(item);
+          return acc;
+        }, {});
+
+        const groups = Object.entries(grouped)
+          .map(([area, groupItems]) => {
+            const sorted = groupItems.slice().sort((a, b) => Number(a.order) - Number(b.order));
+            const minOrder = Math.min(...sorted.map((item) => Number(item.order) || 0));
+            return { area, items: sorted, order: minOrder };
+          })
+          .sort((a, b) => a.order - b.order);
+
+        container.innerHTML = groups
+          .map((group) => {
+            const title = areaLabels[group.area] || "推荐入口";
+            const links = group.items
+              .map((item) => {
+                const safeUrl = item.url.replace(/\\\//g, "/");
+                const note = item.note ? item.note : "备用链接";
+                return `
+                  <a class="nav-item" href="${safeUrl}" target="_blank" rel="noopener">
+                    <span class="label">${item.text}</span>
+                    <span class="link">${safeUrl}</span>
+                    <span class="hint">${note}</span>
+                  </a>
+                `;
+              })
+              .join("");
             return `
-              <a class="nav-item" href="${safeUrl}" target="_blank" rel="noopener">
-                <span class="label">${item.text}</span>
-                <span class="link">${safeUrl}</span>
-                <span class="hint">${note}</span>
-              </a>
+              <div class="nav-section">
+                <div class="nav-section-title">${title}</div>
+                <div class="nav-grid">${links}</div>
+              </div>
             `;
           })
           .join("");
@@ -294,6 +526,5 @@
     </script>
 
     <script src="./announcement.js"></script>
-    <!-- <div style='display:none'><script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1278893351&web_id=1278893351"></script></div> -->
   </body>
 </html>
