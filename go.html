@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>入口</title>
+    <meta name="description" id="page-desc" content="入口页">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" id="page-canonical" href="">
+    <link rel="favicon" href="favicon.ico">
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+        background: #f5f7fb;
+        color: #1f2937;
+        line-height: 1.6;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .wrapper {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 24px 20px 40px;
+      }
+      .subpage-topbar {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .subpage-brand {
+        font-size: 20px;
+        font-weight: 700;
+        color: #111827;
+        letter-spacing: 0.3px;
+      }
+      .subpage-brand:hover {
+        color: #2563eb;
+      }
+      .subpage-brand-sub {
+        font-size: 13px;
+        color: #6b7280;
+      }
+      .card {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+        padding: 24px 22px;
+        margin-bottom: 16px;
+      }
+      .intro-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .intro-body p {
+        font-size: 14px;
+        color: #4b5563;
+        line-height: 1.65;
+        margin-bottom: 12px;
+      }
+      .intro-body p:last-child {
+        margin-bottom: 0;
+      }
+      .card h1 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 12px;
+        line-height: 1.35;
+        word-break: break-word;
+      }
+      .go-dynamic {
+        font-size: 14px;
+        color: #374151;
+        line-height: 1.6;
+        margin-bottom: 14px;
+        padding: 12px 14px;
+        background: #f8fafc;
+        border-radius: 10px;
+        border: 1px solid #e5e7eb;
+      }
+      .dest-url {
+        font-size: 13px;
+        color: #2563eb;
+        word-break: break-all;
+        margin-bottom: 18px;
+        line-height: 1.45;
+      }
+      .dest-label {
+        font-size: 12px;
+        color: #6b7280;
+        margin-bottom: 6px;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+      }
+      .btn {
+        padding: 10px 16px;
+        border-radius: 10px;
+        border: 1px solid #1f2937;
+        background: #1f2937;
+        color: #fff;
+        font-size: 14px;
+        transition: all 0.2s ease;
+        display: inline-block;
+      }
+      .btn.ghost {
+        background: transparent;
+        color: #1f2937;
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 14px rgba(31, 41, 55, 0.15);
+      }
+      .footer {
+        text-align: center;
+        font-size: 12px;
+        color: #6b7280;
+        line-height: 1.7;
+        margin-top: 8px;
+      }
+      .footer a {
+        color: #2563eb;
+        font-weight: 600;
+      }
+      .footer p {
+        margin-bottom: 6px;
+      }
+      .empty-hint {
+        color: #6b7280;
+        font-size: 14px;
+      }
+    </style>
+    <script type="application/ld+json" id="ld-webpage"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="subpage-topbar">
+        <a href="index.html" class="subpage-brand">91 吃瓜福利导航</a>
+        <span class="subpage-brand-sub">备用网址与入口汇总</span>
+      </header>
+
+      <section class="card" aria-labelledby="intro-heading">
+        <h2 id="intro-heading" class="intro-title">本站说明</h2>
+        <div class="intro-body">
+          <p>
+            <strong>91 吃瓜福利导航</strong>在首页「推荐入口」中收录的站点均为第三方链接，本页为出站前的说明页，用于确认站点名称与目标地址后再访问。
+          </p>
+          <p>
+            导航站仅提供入口整理，不对第三方站点的内容、可用性、安全性作担保；访问所产生的一切风险与责任由用户自行承担，请在符合当地法律法规的前提下使用。
+          </p>
+          <p>
+            永久域名 <strong>91cggg.com</strong> 及备用入口以首页公示为准。若链接失效或无法打开，可尝试更换浏览器或稍后再试。
+          </p>
+        </div>
+      </section>
+
+      <main>
+        <article class="card">
+          <h1 id="go-heading">入口</h1>
+          <p id="go-dynamic" class="go-dynamic" style="display: none"></p>
+          <p class="dest-label">目标地址</p>
+          <p id="dest-line" class="dest-url"></p>
+          <div class="actions">
+            <a id="outbound" class="btn" href="#" rel="noopener noreferrer" target="_blank">前往</a>
+            <a class="btn ghost" href="index.html">返回导航首页</a>
+          </div>
+          <p id="empty-state" class="empty-hint" style="display: none; margin-top: 16px">链接无效或已过期，请从首页重新进入。</p>
+        </article>
+      </main>
+
+      <footer class="footer">
+        <p>本站只为海外华人提供服务，非法律允许地区以及18岁以下用户禁止访问！</p>
+        <p><a href="index.html">返回 91 吃瓜福利导航</a></p>
+        <p>© 2026 91吃瓜网</p>
+      </footer>
+    </div>
+    <script>
+      (function () {
+        function safeHttp(u) {
+          try {
+            var x = new URL(String(u).trim());
+            if (x.protocol !== "http:" && x.protocol !== "https:") {
+              return "";
+            }
+            return x.href;
+          } catch (e) {
+            return "";
+          }
+        }
+
+        var params = new URLSearchParams(window.location.search);
+        var urlParam = params.get("url");
+        var nameParam = params.get("t") || "";
+
+        var canonical = document.getElementById("page-canonical");
+        var abs =
+          window.location.protocol +
+          "//" +
+          window.location.host +
+          window.location.pathname +
+          window.location.search;
+        canonical.setAttribute("href", abs);
+
+        var heading = document.getElementById("go-heading");
+        var destLine = document.getElementById("dest-line");
+        var outbound = document.getElementById("outbound");
+        var empty = document.getElementById("empty-state");
+        var goDyn = document.getElementById("go-dynamic");
+
+        if (!urlParam || !String(urlParam).trim()) {
+          document.title = "入口 · 91 吃瓜福利导航";
+          heading.textContent = "入口";
+          document.getElementById("page-desc").setAttribute("content", "入口页");
+          outbound.style.display = "none";
+          destLine.style.display = "none";
+          document.querySelector(".dest-label").style.display = "none";
+          empty.style.display = "block";
+          document.getElementById("ld-webpage").textContent = JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "入口 · 91 吃瓜福利导航",
+            url: abs,
+            isPartOf: { "@type": "WebSite", name: "91 吃瓜福利导航", url: "https://91cggg.com/" },
+            inLanguage: "zh-CN"
+          });
+          return;
+        }
+
+        var targetUrl = urlParam;
+        try {
+          targetUrl = decodeURIComponent(urlParam);
+        } catch (e1) {}
+        var valid = safeHttp(targetUrl);
+
+        if (!valid) {
+          document.title = "入口 · 91 吃瓜福利导航";
+          heading.textContent = "入口";
+          outbound.style.display = "none";
+          destLine.style.display = "none";
+          document.querySelector(".dest-label").style.display = "none";
+          empty.style.display = "block";
+          document.getElementById("page-desc").setAttribute("content", "入口页");
+          return;
+        }
+
+        var displayName = nameParam;
+        try {
+          displayName = decodeURIComponent(nameParam);
+        } catch (e2) {}
+        displayName = String(displayName || "").trim();
+        if (!displayName) {
+          try {
+            displayName = new URL(valid).hostname.replace(/^www\./, "");
+          } catch (e3) {
+            displayName = "外部链接";
+          }
+        }
+
+        goDyn.style.display = "block";
+        goDyn.textContent =
+          "您即将离开导航站，访问收录条目「" + displayName + "」。请核对下方地址是否与预期一致，再点击「前往」。";
+
+        var pageTitle = displayName + " - 入口 · 91 吃瓜福利导航";
+        document.title = pageTitle;
+        heading.textContent = displayName;
+        destLine.textContent = valid;
+        var desc = displayName + " - 91吃瓜福利导航";
+        document.getElementById("page-desc").setAttribute("content", desc);
+
+        outbound.setAttribute("href", valid);
+
+        document.getElementById("ld-webpage").textContent = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": abs + "#webpage",
+          url: abs,
+          name: pageTitle,
+          description: desc,
+          isPartOf: {
+            "@type": "WebSite",
+            name: "91 吃瓜福利导航",
+            url: "https://91cggg.com/"
+          },
+          inLanguage: "zh-CN"
+        });
+      })();
+    </script>
+  </body>
+</html>
