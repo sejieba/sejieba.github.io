@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /go.html
+
+Sitemap: https://91cggg.com/sitemap.xml
